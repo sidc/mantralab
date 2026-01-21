@@ -172,7 +172,33 @@ title: Home
 
     <section id="team">
         <h2>Research Team</h2>
+      
+    <!-- DEBUG INFO -->
+    <div style="background: #fffacd; padding: 20px; margin: 20px 0; border: 2px solid #ff6600;">
+        <h3 style="color: #ff6600;">🔍 Debug Info</h3>
+        <p><strong>Total team members:</strong> {{ site.team.size }}</p>
+        <p><strong>Total publications:</strong> {{ site.publications.size }}</p>
         
+        <p><strong>Team members found:</strong></p>
+        <ul>
+        {% for member in site.team %}
+            <li>{{ member.name }} ({{ member.category }})</li>
+        {% else %}
+            <li>No team members found!</li>
+        {% endfor %}
+        </ul>
+        
+        <p><strong>Publications found:</strong></p>
+        <ul>
+        {% for pub in site.publications %}
+            <li>{{ pub.title }} ({{ pub.year }})</li>
+        {% else %}
+            <li>No publications found!</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <!-- END DEBUG -->
+    
         <h3>Lead Researchers</h3>
         <div class="team-grid">
             {% assign lead_researchers = site.team | where: "category", "Lead Researcher" %}
