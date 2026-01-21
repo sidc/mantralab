@@ -8,20 +8,34 @@ url: "https://sidc.github.io"
 # Build settings
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-feed
 
-# Collections for CMS content
+# Collections configuration
 collections:
   team:
-    output: false
+    output: true
+    permalink: /:collection/:name/
   publications:
-    output: false
+    output: true
+    permalink: /:collection/:name/
   gallery:
     output: false
   videos:
     output: false
 
-# Defaults
+# Make collections available
 defaults:
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: default
   - scope:
       path: ""
     values:
@@ -30,12 +44,10 @@ defaults:
 # Exclude from build
 exclude:
   - README.md
-  - create-content.ps1
+  - "*.ps1"
+  - "*.old"
+  - "*.backup"
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-# Include admin for CMS
-include:
-  - _admin
