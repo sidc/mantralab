@@ -203,20 +203,6 @@ title: Home
         <p style="margin-top: 30px;"><em>Additional research supported by Brainwave Science, Inc. and collaborations across our partner institutions.</em></p>
     </section>
 
-    <section id="dunes">
-        <h2>🎥 DUNES Webinar Series</h2>
-        <p>The OM Alliance hosts <strong>DUNES (Diverse, Unifying, Novel Explorations of contemplative Studies)</strong>, a monthly online webinar series featuring leading researchers in meditation and contemplative science.</p>
-        
-        <div style="background: #f8f9fa; padding: 30px; margin: 30px 0; border-left: 4px solid #18453B; border-radius: 5px;">
-            <h4 style="color: #18453B; margin-bottom: 15px;">About DUNES</h4>
-            <p>Join us for monthly seminars exploring cutting-edge research on meditation, mindfulness, and contemplative practices. Our speakers come from diverse disciplines and institutions, sharing their latest findings and methodologies.</p>
-            
-            <div style="margin-top: 20px;">
-                <a href="https://sites.google.com/view/duneswebinars" class="btn" target="_blank" style="margin-right: 10px;">Visit DUNES Website</a>
-                <a href="https://www.youtube.com/@DUNESWebinarSeries/videos" class="btn btn-secondary" target="_blank">Watch Past Seminars</a>
-            </div>
-        </div>
-    </section>
 
     <div class="opportunities">
         <h2 style="color: #ff6600; border-color: #ff6600;">🎓 Join Our Team</h2>
@@ -245,17 +231,34 @@ title: Home
                 <li>Work with a multi-institutional research team</li>
                 <li>Co-author research publications and conference presentations</li>
             </ul>
-            <p><strong>Duration:</strong> 8-12 weeks during summer<br>
+            <p><strong>Duration:</strong> 8-12 weeks | Remote or In-person <br>
             <strong>Eligibility:</strong> Current undergraduate or Master's students in relevant fields</p>
             <a href="mailto:{{ site.email }}" class="btn btn-secondary">Apply for Summer Internship</a>
         </div>
     </div>
 
+    <section id="dunes">
+        <h2>🎥 DUNES Webinar Series</h2>
+        <p>The OM Alliance hosts <strong>DUNES (Data-driven Understanding of Meditation and Consciousness)</strong>, a monthly online webinar series featuring leading researchers in meditation and contemplative science.</p>
+        
+        <div style="background: #f8f9fa; padding: 30px; margin: 30px 0; border-left: 4px solid #18453B; border-radius: 5px;">
+            <h4 style="color: #18453B; margin-bottom: 15px;">About DUNES</h4>
+            <p>Join us for monthly seminars exploring cutting-edge research on meditation, mindfulness, and contemplative practices. Our speakers come from diverse disciplines and institutions, sharing their latest findings and methodologies.</p>
+            
+            <div style="margin-top: 20px;">
+                <a href="https://sites.google.com/view/duneswebinars" class="btn" target="_blank" style="margin-right: 10px;">Visit DUNES Website</a>
+                <a href="https://www.youtube.com/@DUNESWebinarSeries/videos" class="btn btn-secondary" target="_blank">Watch Past Seminars</a>
+            </div>
+        </div>
+    </section>
+
+
+
     <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact-info">
             <p><strong>For PhD positions, internships, or collaboration inquiries:</strong></p>
-            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            <p>Email: <a href="mailto:ravisha3@msu.edu">ravisha3@msu.edu</a></p>
             <p><strong>Principal Investigator:</strong><br>
             Dr. Saiprasad Ravishankar<br>
             Department of Computational Mathematics, Science and Engineering<br>
