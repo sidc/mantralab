@@ -5,37 +5,101 @@ title: Home
 
 <header>
     <div class="container">
-        <h1>Meditation Research @SLIM</h1>
-        <p>Exploring Neural Mechanisms of Contemplative Practices</p>
-        <div class="university">Michigan State University</div>
+        <h1>OM Alliance</h1>
+        <p>Optimizing Meditation Alliance</p>
+        <div class="university">A Multi-Institutional Collaboration</div>
     </div>
 </header>
 
 <div class="container">
     <section id="about">
-        <h2>About Our Research</h2>
-        <p>Our interdisciplinary research group combines computational neuroscience, psychology, and biomedical engineering to understand the neural mechanisms underlying meditation practices. Using advanced EEG analysis and machine learning techniques, we investigate how different meditation techniques—particularly mantra-based practices—affect brain oscillations, cognitive performance, and mental well-being.</p>
-        <p style="margin-top: 20px;">We maintain an in-house EEGlab facility equipped with state-of-the-art 64-channel wireless EEG systems, enabling longitudinal studies that track neural changes over weeks of meditation practice.</p>
+        <h2>About the Alliance</h2>
+        <p>The <strong>OM Alliance (Optimizing Meditation Alliance)</strong> brings together interdisciplinary researchers from leading institutions to advance our understanding of meditation and contemplative practices through rigorous, data-driven scientific inquiry.</p>
+        
+        <p style="margin-top: 20px;">While the benefits of meditation and mindfulness are widely discussed, profound transformative effects emerge only through consistent, deep practice. We focus on studying ancient methods of deep meditation—particularly mantra-based techniques—using cutting-edge neuroscience, advanced signal processing, machine learning, and psychological research. Our mission is to provide evidence-based guidance for authentic meditation practice that leads to lasting well-being and spiritual growth.</p>
+        
+        <p style="margin-top: 20px;">Our research integrates high-density EEG analysis, computational modeling, and contemplative psychology to uncover the neural mechanisms underlying different meditation techniques. By combining ancient wisdom with modern scientific methods, we aim to optimize meditation practices and understand the conditions that facilitate deeper meditative states.</p>
+        
+        <p style="margin-top: 20px;"><strong>Leadership:</strong> The OM Alliance is led by <strong>Dr. Saiprasad Ravishankar</strong> (Michigan State University) and has evolved from the <a href="https://slim-msu.github.io/" target="_blank">SLIM (Sensing, Learning, Imaging & Modeling) Lab</a>, expanding to encompass a broader collaborative network focused on contemplative neuroscience and the optimization of meditation practice.</p>
     </section>
 
+    <section id="institutions">
+        <h2>🎓 Participating Institutions & Departments</h2>
+        <p>The OM Alliance brings together expertise from multiple institutions and disciplines:</p>
+        
+        <div class="research-areas" style="margin-top: 30px;">
+            <div class="research-card">
+                <h4>Michigan State University</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Department of Computational Mathematics, Science & Engineering</li>
+                    <li>Department of Biomedical Engineering</li>
+                    <li>Department of Psychology</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>Harvard Medical School</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Meditation Research Program</li>
+                    <li>Department of Psychiatry</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>New York University</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Department of Applied Psychology</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>Brunel University London</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Department of Life Sciences</li>
+                </ul>
+            </div>
+            
+            <div class="research-card">
+                <h4>Clinical Partners</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Henry Ford Hospital</li>
+                    <li>Brainwave Science, Inc.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    <section id="news">
+        <h2>📰 News & Updates</h2>
+        
+        {% for item in site.data.news %}
+    <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-left: 4px solid #18453B; border-radius: 5px;">
+        <h4 style="color: #18453B; margin-bottom: 10px;">{{ item.date }}</h4>
+        <p><strong>{{ item.title }}:</strong> {{ item.description }}</p>
+    </div>
+    {% endfor %}
+    
+        <p style="margin-top: 30px; text-align: center;">
+            <em>Stay tuned for upcoming publications, conferences, and research findings!</em>
+        </p>
+    </section>
 
     <section id="research">
         <h2>Research Areas</h2>
         <div class="research-areas">
             <div class="research-card">
-                <h4>Neural Mechanisms of Meditation</h4>
-                <p>Investigating the brain dynamics underlying Japa meditation techniques, including mantra-based practices (Hare Krishna, Sa Ta Na Ma) and breath-focused meditation. Using advanced spectral analysis and FOOOF decomposition to identify neural biomarkers of meditation states.</p>
+                <h4>Exploring Neural Mechanisms and Effects of Contemplative Practices</h4>
+                <p>Investigating the brain dynamics underlying various meditation techniques, including mantra-based practices (Hare Krishna, Sa Ta Na Ma) and breath-focused meditation. Using advanced spectral analysis, FOOOF decomposition, and machine learning to identify neural biomarkers and understand the transformative effects of sustained contemplative practice.</p>
             </div>
             
             <div class="research-card">
                 <h4>Cognitive & Behavioral Changes</h4>
-                <p>Examining longitudinal improvements in attention, cognitive processing speed (P300 latency), mindfulness, interoceptive awareness, and stress reduction through controlled meditation interventions lasting 6+ weeks.</p>
+                <p>Examining longitudinal improvements in attention, cognitive processing speed (P300 latency), mindfulness, interoceptive awareness, and stress reduction through controlled meditation interventions lasting 6+ weeks. Understanding how consistent, deep practice leads to lasting neuroplastic changes and enhanced well-being.</p>
             </div>
             
             <div class="research-card">
-                <h4>Clinical Collaboration</h4>
-                <p>Partnering with Henry Ford Hospital to develop advanced EEG-based methods for detecting and localizing epileptic activity in brain regions, applying our signal processing expertise to clinical challenges.</p>
+                <h4>Clinical Applications & Meditation State Detection</h4>
+                <p>Partnering with Henry Ford Hospital to develop advanced EEG-based methods for detecting meditation signatures and using machine learning for real-time meditation state classification. Applying our signal processing expertise to distinguish authentic meditative states from mind-wandering and rest.</p>
             </div>
         </div>
 
@@ -46,6 +110,7 @@ title: Home
             <li>Meditation enhances interoceptive awareness (MAIA scores) across all technique types</li>
             <li>Individual Alpha Frequency (IAF) increases and Individual Alpha Power (IAP) decreases during meditation, suggesting enhanced attentional control</li>
             <li>Deep learning models with Stationary Wavelet Transform modules successfully classify meditation states with >90% accuracy</li>
+            <li>Consistent deep practice is essential for accessing transformative meditative states</li>
         </ul>
     </section>
 
@@ -98,45 +163,27 @@ title: Home
     </section>
 
     <section id="team">
-        <h2>Research Team</h2>
+        <h2>Research Team & Collaborators</h2>
+        <p style="margin-bottom: 30px;">The OM Alliance brings together researchers, clinicians, and meditation experts from multiple institutions.</p>
         
-        <h3>Lead Researchers</h3>
         <div class="team-grid">
-            {% assign lead_researchers = site.data.team | where: "category", "Lead Researcher" %}
-            {% for member in lead_researchers %}
+            {% for member in site.data.team %}
             <div class="team-member">
                 <h4>{{ member.name }}</h4>
                 <div class="role">{{ member.role }}</div>
                 <p>{{ member.department }}</p>
             </div>
             {% endfor %}
-        </div>
-
-        <h3>Advisory Faculty</h3>
-        <div class="team-grid">
-            {% assign advisors = site.data.team | where: "category", "Advisory Faculty" %}
-            {% for member in advisors %}
+            
+            <!-- Add Matthew Sacchet manually since he's new -->
             <div class="team-member">
-                <h4>{{ member.name }}</h4>
-                <div class="role">{{ member.role }}</div>
-                <p>{{ member.department }}</p>
+                <h4>Dr. Matthew Sacchet</h4>
+                <div class="role">Collaborator</div>
+                <p>Meditation Research Program, Department of Psychiatry<br>Harvard Medical School</p>
             </div>
-            {% endfor %}
         </div>
 
-        <h3>Research Support & Students</h3>
-        <div class="team-grid">
-            {% assign support = site.data.team | where: "category", "Research Support" %}
-            {% for member in support %}
-            <div class="team-member">
-                <h4>{{ member.name }}</h4>
-                <div class="role">{{ member.role }}</div>
-                <p>{{ member.department }}</p>
-            </div>
-            {% endfor %}
-        </div>
-
-        <p style="margin-top: 30px;"><em>We also gratefully acknowledge our expert meditation instructors Devin O'Rourke (Harmony Collective) and our dedicated data collectors including Pratham Pradhan, Annie Wozniak, Vu Song Thuy Nguyen, Wei-ting Tan, Alisia Coipel, and Genevieve Orlewicz.</em></p>
+        <p style="margin-top: 30px;"><em>We also gratefully acknowledge our expert meditation instructors Devin O'Rourke and Sidharth Chhabra (Harmony Collective, Ypsilanti), and our dedicated data collectors including Pratham Pradhan, Annie Wozniak, Vu Song Thuy Nguyen, Wei-ting Tan, Alisia Coipel, and Genevieve Orlewicz.</em></p>
     </section>
 
     <section id="publications">
@@ -155,7 +202,7 @@ title: Home
             </li>
             {% endfor %}
         </ul>
-        <p style="margin-top: 30px;"><em>Additional research supported by Brainwave Science, Inc. and collaborations with Brunel University London.</em></p>
+        <p style="margin-top: 30px;"><em>Additional research supported by Brainwave Science, Inc. and collaborations across our partner institutions.</em></p>
     </section>
 
     <div class="opportunities">
@@ -163,14 +210,15 @@ title: Home
         
         <div class="opportunity-box">
             <h3>PhD Student Positions Available</h3>
-            <p><strong>We are actively seeking motivated PhD students</strong> to join our research group. Ideal candidates will have:</p>
+            <p><strong>We are actively seeking motivated PhD students</strong> to join our research alliance. Ideal candidates will have:</p>
             <ul style="margin: 15px 0 15px 30px;">
-                <li>Background in neuroscience, computational science, biomedical engineering, or related fields</li>
-                <li>Interest in meditation research and contemplative neuroscience</li>
+                <li>Background in neuroscience, computational science, biomedical engineering, psychology, or related fields</li>
+                <li>Strong interest in meditation research and contemplative neuroscience</li>
                 <li>Experience with signal processing, machine learning, or EEG analysis (preferred but not required)</li>
                 <li>Strong programming skills (Python, MATLAB)</li>
+                <li>Personal meditation practice or strong interest in developing one</li>
             </ul>
-            <p><strong>What we offer:</strong> Opportunities to work on cutting-edge longitudinal meditation studies, collaborate with clinical partners, publish in top-tier journals, and contribute to a growing field of contemplative neuroscience.</p>
+            <p><strong>What we offer:</strong> Opportunities to work on cutting-edge longitudinal meditation studies, collaborate with leading researchers across institutions, publish in top-tier journals, and contribute to understanding how to optimize meditation practice.</p>
             <a href="mailto:{{ site.email }}" class="btn btn-secondary">Apply for PhD Position</a>
         </div>
 
@@ -181,6 +229,7 @@ title: Home
                 <li>Gain hands-on experience with EEG data collection and analysis</li>
                 <li>Learn advanced signal processing and machine learning techniques</li>
                 <li>Contribute to ongoing meditation neuroscience studies</li>
+                <li>Work with a multi-institutional research team</li>
                 <li>Co-author research publications and conference presentations</li>
             </ul>
             <p><strong>Duration:</strong> 8-12 weeks during summer<br>
@@ -194,7 +243,9 @@ title: Home
         <div class="contact-info">
             <p><strong>For PhD positions, internships, or collaboration inquiries:</strong></p>
             <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-            <p>Department of Computational Mathematics, Science and Engineering<br>
+            <p><strong>Principal Investigator:</strong><br>
+            Dr. Saiprasad Ravishankar<br>
+            Department of Computational Mathematics, Science and Engineering<br>
             Michigan State University<br>
             East Lansing, MI 48824</p>
         </div>
