@@ -14,13 +14,11 @@ title: Home
 <div class="container">
     <section id="about">
         <h2>About the Alliance</h2>
-        <p>The <strong>OM Alliance (Optimizing Meditation Alliance)</strong> brings together interdisciplinary researchers from leading institutions to advance our understanding of meditation and contemplative practices through rigorous, data-driven scientific inquiry.</p>
+        <p>The <strong>OM Alliance (Optimizing Meditation Alliance)</strong> is a multi-institutional collaborative network advancing the scientific understanding of meditation through data-driven research. We employ computational neuroscience, advanced signal processing, machine learning, and rigorous experimental psychology to study contemplative practices.</p>
         
-        <p style="margin-top: 20px;">While the benefits of meditation and mindfulness are widely discussed, profound transformative effects emerge only through consistent, deep practice. We focus on studying ancient methods of deep meditation—particularly mantra-based techniques—using cutting-edge neuroscience, advanced signal processing, machine learning, and psychological research. Our mission is to provide evidence-based guidance for authentic meditation practice that leads to lasting well-being and spiritual growth.</p>
+        <p style="margin-top: 20px;">Our research focuses on quantifying neural dynamics during meditation using high-density EEG (64-channel wireless systems), spectral analysis (FOOOF decomposition, time-frequency representations), and multivariate classification methods. We investigate mantra-based meditation techniques through longitudinal studies, examining event-related potentials (P300), oscillatory biomarkers (alpha/theta power, IAF/IAP), and behavioral correlates (MAIA, FFMQ, PSS). Our goal is to establish evidence-based frameworks for meditation practice optimization through rigorous neuroscientific inquiry.</p>
         
-        <p style="margin-top: 20px;">Our research integrates high-density EEG analysis, computational modeling, and contemplative psychology to uncover the neural mechanisms underlying different meditation techniques. By combining ancient wisdom with modern scientific methods, we aim to optimize meditation practices and understand the conditions that facilitate deeper meditative states.</p>
-        
-        <p style="margin-top: 20px;"><strong>Leadership:</strong> The OM Alliance is led by <strong>Dr. Saiprasad Ravishankar</strong> (Michigan State University) and has evolved from the <a href="https://slim-msu.github.io/" target="_blank">SLIM (Sensing, Learning, Imaging & Modeling) Lab</a>, expanding to encompass a broader collaborative network focused on contemplative neuroscience and the optimization of meditation practice.</p>
+        <p style="margin-top: 20px;"><strong>Leadership:</strong> The OM Alliance is led by <strong>Dr. Saiprasad Ravishankar</strong> (Michigan State University) and has evolved from the <a href="https://slim-msu.github.io/" target="_blank">SLIM (Sensing, Learning, Imaging & Modeling) Lab</a>, expanding to encompass a broader collaborative network focused on contemplative neuroscience.</p>
     </section>
 
     <section id="institutions">
@@ -73,12 +71,12 @@ title: Home
         <h2>📰 News & Updates</h2>
         
         {% for item in site.data.news %}
-    <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-left: 4px solid #18453B; border-radius: 5px;">
-        <h4 style="color: #18453B; margin-bottom: 10px;">{{ item.date }}</h4>
-        <p><strong>{{ item.title }}:</strong> {{ item.description }}</p>
-    </div>
-    {% endfor %}
-    
+        <div style="background: #f8f9fa; padding: 20px; margin: 20px 0; border-left: 4px solid #18453B; border-radius: 5px;">
+            <h4 style="color: #18453B; margin-bottom: 10px;">{{ item.date }}</h4>
+            <p><strong>{{ item.title }}:</strong> {{ item.description }}</p>
+        </div>
+        {% endfor %}
+        
         <p style="margin-top: 30px; text-align: center;">
             <em>Stay tuned for upcoming publications, conferences, and research findings!</em>
         </p>
@@ -196,13 +194,28 @@ title: Home
                 {% if pub.pdf %}
                 <br><a href="{{ pub.pdf | relative_url }}" target="_blank">📄 View Poster (PDF)</a>
                 {% endif %}
-                {% if pub.link %}
+                {% if pub.link and pub.link != "" %}
                 <br><a href="{{ pub.link }}" target="_blank">🔗 Link</a>
                 {% endif %}
             </li>
             {% endfor %}
         </ul>
         <p style="margin-top: 30px;"><em>Additional research supported by Brainwave Science, Inc. and collaborations across our partner institutions.</em></p>
+    </section>
+
+    <section id="dunes">
+        <h2>🎥 DUNES Webinar Series</h2>
+        <p>The OM Alliance hosts <strong>DUNES (Diverse, Unifying, Novel Explorations of contemplative Studies)</strong>, a monthly online webinar series featuring leading researchers in meditation and contemplative science.</p>
+        
+        <div style="background: #f8f9fa; padding: 30px; margin: 30px 0; border-left: 4px solid #18453B; border-radius: 5px;">
+            <h4 style="color: #18453B; margin-bottom: 15px;">About DUNES</h4>
+            <p>Join us for monthly seminars exploring cutting-edge research on meditation, mindfulness, and contemplative practices. Our speakers come from diverse disciplines and institutions, sharing their latest findings and methodologies.</p>
+            
+            <div style="margin-top: 20px;">
+                <a href="https://sites.google.com/view/duneswebinars" class="btn" target="_blank" style="margin-right: 10px;">Visit DUNES Website</a>
+                <a href="https://www.youtube.com/@DUNESWebinarSeries/videos" class="btn btn-secondary" target="_blank">Watch Past Seminars</a>
+            </div>
+        </div>
     </section>
 
     <div class="opportunities">
