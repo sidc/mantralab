@@ -173,15 +173,9 @@ title: Home
             </div>
             {% endfor %}
             
-            <!-- Add Matthew Sacchet manually since he's new -->
-            <div class="team-member">
-                <h4>Dr. Matthew Sacchet</h4>
-                <div class="role">Collaborator</div>
-                <p>Meditation Research Program, Department of Psychiatry<br>Harvard Medical School</p>
-            </div>
         </div>
 
-        <p style="margin-top: 30px;"><em>We also gratefully acknowledge our expert meditation instructors Devin O'Rourke and Sidharth Chhabra (Harmony Collective, Ypsilanti), and our dedicated data collectors including Pratham Pradhan, Annie Wozniak, Vu Song Thuy Nguyen, Wei-ting Tan, Alisia Coipel, and Genevieve Orlewicz.</em></p>
+        <p style="margin-top: 30px;"><em>We also gratefully acknowledge our expert meditation instructors Devin O'Rourke (Harmony Collective, Ypsilanti), and our dedicated data collectors including Pratham Pradhan, Annie Wozniak, Vu Song Thuy Nguyen, Wei-ting Tan, Alisia Coipel, and Genevieve Orlewicz.</em></p>
     </section>
 
     <section id="publications">

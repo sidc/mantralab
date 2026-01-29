@@ -1,5 +1,5 @@
 ﻿- name: Angqi Li
-  role: PhD Candidate, Lead Researcher
+  role: PhD Candidate
   department: Computational Mathematics, Science & Engineering
   category: Lead Researcher
 
@@ -21,6 +21,11 @@
 - name: Dr. Taosheng Liu
   role: Advisor
   department: Psychology, Michigan State University
+  category: Advisory Faculty
+
+- name: Dr. Matthew Sacchet
+  role: Advisor
+  department: Meditation Research Program, Harvard Medical School
   category: Advisory Faculty
 
 - name: Sidharth Chhabra
